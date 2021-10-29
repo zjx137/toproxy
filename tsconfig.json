@@ -1,0 +1,21 @@
+{
+    "compilerOptions": {
+        "module": "commonjs",
+        "target": "ES6",
+        "noImplicitAny": false,
+        "rootDir": "./lib",
+        "outDir": "./build",
+        "sourceMap": true,
+        "esModuleInterop": true,
+        "typeRoots": [
+            "./node_modules/@types",
+            "./typings"
+        ]
+    },
+    "include": [
+        "lib/**/*"
+    ],
+    "typeAcquisition": {
+        "enable": true
+    }
+}

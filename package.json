@@ -1,0 +1,30 @@
+{
+  "name": "toproxy",
+  "version": "1.0.0",
+  "description": "ToProxy is a HTTP/HTTPS proxy based on NodeJS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "local": "npx tsc && node ./build/proxy.js"
+  },
+  "keywords": [
+    "proxy",
+    "http",
+    "https"
+  ],
+  "author": "bacbin",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/async": "^3.2.8",
+    "@types/nedb": "^1.8.12",
+    "@types/node": "^16.11.4",
+    "ts-node": "^10.4.0",
+    "typescript": "^4.4.4"
+  },
+  "dependencies": {
+    "async": "^3.2.1",
+    "co": "^4.6.0",
+    "nedb": "^1.8.0",
+    "ws": "^8.2.3"
+  }
+}
