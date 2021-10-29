@@ -1,8 +1,8 @@
 {
   "name": "toproxy",
   "version": "1.0.0",
-  "description": "ToProxy is a HTTP/HTTPS proxy based on NodeJS",
-  "main": "index.js",
+  "description": "toproxy is a HTTP/HTTPS/Websocket proxy in TypeScript",
+  "main": "./lib/proxy.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "local": "npx tsc && node ./build/proxy.js"
