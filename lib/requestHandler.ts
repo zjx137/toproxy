@@ -1,5 +1,5 @@
 import { URL } from 'url'
-import http, { ServerResponse } from 'http'
+import http from 'http'
 import https from 'https'
 import { getHeadersFromRawHeaders } from './utils'
 

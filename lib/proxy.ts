@@ -98,4 +98,3 @@ class ProxyCore extends events.EventEmitter {
 
 let test = new ProxyCore({})
 test.start()
-let a:Ob
