@@ -74,5 +74,4 @@ class ProxyCore extends events_1.default.EventEmitter {
 }
 let test = new ProxyCore({});
 test.start();
-let a;
 //# sourceMappingURL=proxy.js.map
