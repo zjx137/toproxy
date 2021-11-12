@@ -1,3 +1,6 @@
+import path from 'path'
+import fs from 'fs'
+
 export function getHeadersFromRawHeaders(rawHeaders: string[]):Object {
     const headerObj = {}
     if (rawHeaders) {
@@ -12,4 +15,17 @@ export function getHeadersFromRawHeaders(rawHeaders: string[]):Object {
     }
 
     return headerObj
+}
+
+export function getUserHome() :string{
+    return process.env.HOME || process.env.USERPROFILE
+}
+
+export function getToProxyHome(pathName : string) {
+    const home = getUserHome()
+    const targetPath = path.join(home, pathName)
+    if(!fs.existsSync(targetPath)) {
+        fs.mkdirSync(targetPath)
+    }
+    return targetPath
 }

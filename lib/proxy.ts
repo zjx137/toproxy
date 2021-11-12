@@ -1,5 +1,6 @@
 import http from 'http'
 import https from 'https'
+import net from 'net'
 import events from 'events'
 import async from 'async'
 import co from 'co'
@@ -47,7 +48,7 @@ class ProxyCore extends events.EventEmitter {
                 function (callback) {
                     if (self.proxyType === T_TYPE_HTTPS) {
                         // handle https server
-                       self.httpProxyServer = http.createServer(self.requestHandler.reqHandler())
+                        self.httpProxyServer = http.createServer(self.requestHandler.reqHandler())
                     } else {
                         self.httpProxyServer = http.createServer(self.requestHandler.reqHandler())
                     }
